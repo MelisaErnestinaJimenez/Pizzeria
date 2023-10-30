@@ -1,0 +1,814 @@
+/* .............................Parte de Christopher Herrera............................. */
+
+:root {
+    /* Paleta de colores */
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+ 
+    --dark-solid: #1f1f1f;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Roboto', sans-serif;
+    --cursive-font: 'Lobster', cursive;
+    --poppins-font: 'Poppins', sans-serif;
+    /* font-family: 'Inter', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+    /* Font sizes */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.2em;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2.0rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+
+
+/* HEADER */
+
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-12);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+p {
+    font-size: 1.8em;
+}
+img {
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    max-height: 2500px;
+    margin: 0 auto;
+}
+.menu-sin-foto {
+    width:100%;
+    height: 60rem;
+}
+
+
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+
+
+
+/* HERO BANNER*/
+.hero {
+    background-image: url(../img/Madera-Negra.jpg)!important;
+    padding: var(--spacing-128);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.hero::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brightness(.9);
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: start;
+    z-index: 2;
+    position: relative;
+}
+.hero__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--light-font-solid);
+}
+.hero__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
+}
+.hero__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--light-bg-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+.hero__link:hover {
+    background-color: var(--primary-900);
+    color: var(--light-font-solid);
+}
+.main-container {
+    padding: var(--spacing-68); 
+    background: var(--light-bg-solid); 
+    background-image: url(../img/fondo.webp);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover; 
+    filter: contrast(5.2) brightness(5.1) saturate(-20);
+
+}
+.main-container .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: var(--spacing-128);  */
+}
+
+
+/*titulosseparadores*/
+.titulosseparadores-container {
+    text-align: center; 
+    /* margin: var(--spacing-24) auto;  */  
+}
+
+
+/* Estilo para el título */
+.titulosseparadores {
+    font-family: var(--base-font);
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark-solid);
+    padding: 1em; 
+    margin-bottom: 1em;
+    border-top: 4px double var(--primary-solid);
+    border-bottom: 4px double var(--primary-solid);
+}    
+
+
+/* titulos subrayados */
+.titulosubrayados {
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark-solid);
+    padding: 40px; 
+    margin-bottom: 100px;
+}
+
+
+/* ELEMENTOS */
+.elemento-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: var(--spacing-24); 
+    margin: 0 auto; 
+}
+.elemento {
+    max-width: calc(50% - var(--spacing-12)); 
+    flex: 1 1 calc(50% - var(--spacing-12)); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-36);
+    border: 1px dotted #cfcccc;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center; 
+}
+.elemento__comida {
+    max-width: 24%;
+    flex: 1 1 calc(50% - var(--spacing-12)); 
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    padding: var(--spacing-36) var(--spacing-36) var(--spacing-68) var(--spacing-36);
+    background-color: var(--light-bg-solid);
+    text-align: center; 
+    border-radius: 1rem;
+    position: relative; 
+    overflow: hidden; 
+    transition: transform 0.3s; 
+    transform-origin: center center; 
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+}
+.elemento__comida 
+.elemento__content { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 0;
+    padding-bottom: var(--spacing-12);
+
+    text-align: center;
+    /* opacity: 0; 
+    transition: opacity 0.3s;  */
+  }  
+.elemento__comida:hover .elemento__content {
+    opacity: 1; 
+}
+.elemento__comida:hover {
+    /* background-color: var(--primary-900);
+    transition: background .3s ease-in-out; */
+    transform: scale(1.1);
+}
+.elemento__content {
+
+    display: block;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    align-items: start;
+}
+.elemento__cover img {
+    max-width: 80%; 
+    height: auto; 
+    object-fit: cover;
+ 
+}
+.elemento__title {
+    text-align: center;
+    font-family: var(--alternative-font);
+    font-size: medium;
+    font-weight: 50;
+    padding: var(--spacing-12);
+   
+}
+.elemento__text {
+   text-align: center;
+    font-family: var(--alternative-font);
+    font-size: small;
+    font-weight: 300;
+    padding-top: var(--spacing-8);
+}
+.elemento__link {
+    text-align: center;
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    font-weight: 500;
+}
+.elemento__comida .elemento__text {
+    display: none; 
+}
+
+.elemento__comida:hover .elemento__text {
+    display: block; 
+}
+
+
+.elemento__content { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 0;
+    padding-bottom: var(--spacing-12);
+   
+    text-align: center;
+    /* opacity: 0; 
+    transition: opacity 0.3s;  */
+}
+
+
+/* Sección de empanadas */
+.empanada-container {
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    color: var(--light-font-solid);
+    background-image: url(../img/empanadas-tucumanas.webp);
+    background-size: 170rem 100rem;
+    background-position: center;
+    border-radius: 5rem;
+    margin: 0 auto; 
+    position: relative; 
+}
+
+.empanada-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: inherit; 
+}
+
+
+
+
+.empanadas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.empanadas li {
+    width: 30rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    color: var(--light-font-solid);
+    text-shadow: 4px 4px 4px #000000;
+    text-align: center;
+    position: relative; 
+}
+
+.empanadas li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: var(--light-font-solid);
+    transform: scaleX(0); 
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.empanadas li:hover::after {
+    transform: scaleX(1); 
+}
+
+
+/* Fin de empanadas */
+
+/*Sección de sándwiches y milanesas */
+
+.Milanesa-container {
+    width: 70%;
+    height: 100%;
+    color: var(--light-font-solid);
+    /* background-image: url(../img/Sandwiches/Sandwich\ de\ Mila.webp); */
+    background-image: url(../img/Sandwiches/mila.jpg), linear-gradient(rgb(171, 164, 164), rgba(45, 13, 13, 0.609));
+    background-size: 100%;
+    padding: 3rem;
+    opacity: .9;
+    background-position: center;
+    border-radius: 1rem;
+    margin: 0 auto; 
+    position: relative; 
+}
+
+
+.Milanesa-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: inherit; 
+}
+
+
+
+    .elemento-milas {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+
+
+.milas li {
+    width: 40rem;
+    padding: var(--spacing-12);
+
+    margin: 0 auto;
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    color: var(--light-font-solid);
+    text-shadow: 4px 4px 4px #000000;
+    text-align: center;
+    position: relative; 
+}
+
+
+.milas li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: var(--light-font-solid);
+    transform: scaleX(0); 
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.milas li:hover{
+    background-color: hwb(0 12% 88% / 0.6);
+    transform: scaleY(1.1);
+    transform: scaleX(1.1); 
+    transform-origin:center;
+    transition: transform 0.4s ease-out; 
+}
+
+.milas li:hover::after {
+    transform: scaleX(1);
+    background-color: #344352;
+}
+
+
+
+
+
+/* Fin de Sándwiches y milanesas */
+
+
+
+
+/* Estilos generales del footer */
+
+/* Estilos generales del footer */
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-8);
+    color: white;
+}
+
+/* Estilos para el rectángulo con los elementos */
+.footer__rectangle {
+    height: 50%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: var(--spacing-4);
+    padding: var(--spacing-12);
+}
+
+/* Estilos para el logo a la izquierda */
+.footer__logo {
+    width: 10%; 
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el botón en el medio */
+.footer__button {
+    flex-grow: 1;
+    text-align: center;
+    font-size: var(--font-medium);
+    font-family: var(--alternative-font);
+}
+
+.footer__button a {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: var(--spacing-8) ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.footer__button:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para la información de horarios y sucursales a la derecha */
+.footer__info {
+    text-align: center;
+    justify-items: left;
+ font-size: var(--font-xsmall);
+ font-family: var(--alternative-font);
+
+}
+
+/* Estilos para la línea separadora */
+.footer__line {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    border: none;
+    height: 1px;
+}
+
+/* Estilos para los logos de redes sociales */
+.footer__social {
+    height: 20%;
+    text-align: center;
+    margin: var(--spacing-4) 0;
+    font-family: var(--alternative-font);
+    margin: var(--spacing-12);
+}
+
+.footer__social p {
+    margin-bottom: var(--spacing-12);
+}
+
+.navbar__social {
+    font-size: var(--font-medium);
+    margin: var(--spacing-2);
+    text-decoration: none;
+    color: white;
+    padding: var(--spacing-12);
+}
+
+.navbar__social:hover iconify-icon {
+    transform: scale(1.6);
+}
+
+/* Estilos para los derechos de autor y créditos */
+.footer__copy {
+    text-align: center;
+    font-size: var(--font-xsmall);
+    margin-top: var(--spacing-4);
+}
+
+.copyright {
+    font-size: 11px;
+
+}
+
+cite {
+    font-size: 10px;
+    display: block;
+    
+}
+
+
+
+
+/*SLIDER*/
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.slider__title {
+    font-family: var(--alternative-font) ;
+    font-size: var(--font-display) ;
+    text-transform: uppercase;
+}
+
+.slider__items {
+    display:flex;
+    gap: var(--spacing-24);
+}
+
+
+
+.card-item__cover {
+    display: flex;
+    position: relative;
+
+}
+
+.card-item__tag {
+    font-size: var(--font-xsmall);
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right:0;
+}
+
+
+
+
+.card-item__cover img {
+    /* animation: fade .7s; */
+    filter: brightness(70%); 
+    transition: filter 0.3s ease;
+}
+
+
+.card-item__cover:hover .card-item__img--front {
+    filter: none; 
+}
+
+
+
+
+    .card-item__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-12);
+        padding: var(--spacing-16);
+    }
+
+
+
+
+
+
+
+.card-item__title {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
+
+
+.card-item__name {
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+.card-item__price {
+    font-size: var(--font-small);
+}
+
+.card-item__promo {
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid) ;
+    font-weight: 700;
+}
+
+
+/*---------------------------------MEDIA QUERIES--------------------------------------------*/
+
+
+
+@media screen and (max-width: 768px) {
+    .titulosseparadores{
+        font-size: 8em;
+    }
+
+    .hero{
+        display: none;
+    }
+    html {
+        font-size: 20%; 
+    }
+    .milas li {
+        margin-top: 1em;
+        font-size: 5em;
+        width: 100%;
+        
+    }
+    
+    .elemento__title{
+        font-size: medium;
+    }
+    .elemento-container {
+        width: 100%; 
+        gap: var(--spacing-12);
+        display: flex; 
+    }
+
+    .elemento {
+        max-width: 60%; 
+        flex: 1 1 100%; 
+        padding: var(--spacing-24); 
+    }
+
+    .elemento__comida {
+        max-width: 80%; 
+        flex: 1 1 50%; 
+        padding: var(--spacing-24);
+        margin-bottom: 3rem;
+    }
+    .footer__copy {
+        text-align: center;
+        width: 100%;
+        max-height: 50%;
+        font-size: 8px;
+    } 
+
+
+    .copyright { text-align: center;
+        width: 100%;
+        max-height: 5%;
+        font-size: var(--font-xsmall);
+    }
+
+
+    cite { 
+        text-align: center;
+        width: 100%;
+        max-height: 50%;
+        font-size: 8px;
+    }
+    @media screen and (min-width:769px) and (max-width:1280px) {
+        .elemento-container {
+            gap: var(--spacing-12); 
+        }
+    
+        .elemento {
+            max-width: 80%; 
+            flex: 1 1 100%; 
+            padding: var(--spacing-24); 
+        }
+    
+        .elemento__comida {
+            max-width: 30%; 
+            flex: 1 1 50%; 
+            padding: var(--spacing-24); 
+        }
+    }
+    
+    .menu-sin-foto {
+        width: 100%;
+        height: 210em;
+    }  
+}
+    /* Media query para pantallas más pequeñas, menos de 480px de ancho */
+    @media screen and (max-width: 480px) {
+
+        .menu-sin-foto {
+            width: 100%;
+            height: 195em;
+        }
+        .iconos__delivery img {
+            height: 50%; 
+            width: 50%;
+            flex: 1 1 50%; 
+        }
+    
+        .delivery {
+        
+            max-width: 100%; 
+            flex: 1 1 100%; 
+            padding: var(--spacing-8); 
+        }
+        
+        .iconos__delivery{
+
+            width: 100%;
+            height: 100%;
+        }
+
+
+    }
+
+/*.............................Fin de la parte de Christopher Herrera............................. */

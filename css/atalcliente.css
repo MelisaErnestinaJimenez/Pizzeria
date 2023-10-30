@@ -1,0 +1,284 @@
+/* .............................Parte de Melisa Jiménez............................. */
+
+
+html {
+    height: 100vh;
+}
+
+.logincontainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50em;
+    background-color: var(--light-bg-solid);
+    padding-bottom: var(--spacing-16);
+    border-radius: 0.625rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+.form-container {
+    max-width: 50rem;
+    padding: 1rem;
+    margin: 0 auto; /* Asegura el centrado horizontal de los elementos internos */
+}
+
+.completaform {
+padding-top: 4rem;
+font-size: 2.5rem !important;
+}
+
+html {
+    text-align: center !important;
+}
+
+.titulosseparadores {
+    font-size: 4rem !important;
+}
+
+
+.email ,
+.password 
+ {
+
+    font-size: 2rem !important;
+    text-align: center !important;
+    justify-items: center;
+
+}
+
+.email {
+    padding-right: 2rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 2rem;
+    flex-direction: column;
+    margin: auto;
+    gap: var(--spacing-28);
+
+}
+
+.transparent-input {
+    border: none !important;
+    border-bottom: 2px solid red !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    /* background: linear-gradient(to top, rgba(234, 178, 178, 0.205), rgba(250, 250, 250, 0.205)); */
+}
+
+.transparent-input:focus {
+    color:  black;
+    border: none !important;
+    border-bottom: 2px solid red !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background: linear-gradient(to top, rgba(234, 178, 178, 0.452), rgba(250, 250, 250, 0.205));
+}
+
+.black-link {
+    color: black;
+    font-size: 2.5rem; 
+    padding: 2rem;
+}
+
+.form-check-label {
+    font-size: 3rem;
+    padding: 0.5rem ;
+}
+.btn-danger {
+ max-width: 10rem !important;
+    font-size: 1.5rem !important;
+    padding: 0.5rem;
+}
+
+.form-check-input {
+    position: static !important;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+    padding: 1.5rem !important;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container label {
+    margin-left: 1rem;
+}
+
+
+.form__submit {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-36);
+    justify-content: center;
+    margin: var(--spacing-16) 0;
+}
+
+
+#emaillabel {
+    font-size: 2.2rem ; padding-right: 5rem;  margin: 1rem;
+}
+
+#passwordlabel {
+font-size: 2.2rem; padding-right: 1rem;
+}
+
+
+
+
+
+
+/*formulario de contacto */
+.contact-form {
+    width: 50%;
+    background-color: var(--light-bg-solid);
+    padding: var(--spacing-36);
+    border-radius: 0.625rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: var(--spacing-68) auto;
+   
+}
+
+.contact-form h2 {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    color: var(--dark-solid);
+    text-align: center;
+    margin-bottom: var(--spacing-24);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-16);
+}
+
+.form-group label {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    color: var(--dark-solid);
+    display: block;
+    margin-bottom: var(--spacing-8);
+
+}
+
+.transparent-input {
+    margin-bottom: var(--spacing-16);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: var(--font-small);
+    font-family: var(--alternative-font);
+}
+
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    border: none;
+    border-radius: 5px;
+    padding: var(--spacing-12) var(--spacing-24);
+    font-size: var(--font-medium);
+    font-family: var(--alternative-font);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-900);
+    justify-content: center;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .titulosseparadores {
+        font-size: 5rem !important;
+    }
+
+
+    .contact-form {
+        width: 50rem !important;
+        height: 75rem !important;
+     
+        font-size: 1.5rem !important;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+
+    .titulosseparadores {
+        font-size: 12rem !important;
+    }
+
+
+    .contact-form {
+        width: 140rem !important;
+        height: 145rem !important;
+     
+        font-size: 4rem !important;
+    }
+}
+
+    @media screen and (min-width: 325px) and (max-width: 499px) {
+        .titulosseparadores {
+            font-size: 10rem !important;
+        }
+    
+
+        .contact-form {
+            width: 80rem;
+          
+         
+            font-size: 4rem;
+        }
+    }
+
+    @media screen and (min-width: 220px) and (max-width: 324px) {
+
+        .titulosseparadores {
+            font-size: 9rem !important;
+        }
+    
+            .contact-form {
+                width: 55rem;
+             
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (min-width: 194px) and (max-width: 220px) {
+            
+            .titulosseparadores {
+                font-size: 3rem !important;
+            }
+    .contact-form {
+        width: 50rem !important;
+        margin: 0 !important;
+     
+        font-size: 3rem;
+    }
+        }
+
+
+/*.............................Fin de la parte de Melisa Jiménez............................. */

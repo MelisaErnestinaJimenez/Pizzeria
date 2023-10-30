@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f400;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu-container {
+    /* background-color: #fff; */
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    /* Borde gris opaco */
+    width: 85%;
+    position: relative;
+    /* Necesario para posicionar la imagen absolutamente */
+    box-shadow: -5px 5px 40px rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+}
+
+.barra-superior {
+    width: 100%;
+    height: 4.5em;
+    background-color: #f1ce6d;
+    
+}
+
+.sandwich-image {
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    /* Hace la imagen circular */
+    position: absolute;
+    /* Posiciona la imagen respecto al contenedor */
+    top: -5em;
+    /* Hace que la imagen sobresalga del contenedor */
+    left: 50%;
+    /* Centra la imagen horizontalmente */
+    transform: translateX(-50%);
+    /* Ajuste fino para centrar la imagen */
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.6);
+    /* Sombra con difuminado */
+}
+
+.sandwich__item {
+    padding: 1em;
+    padding-top: 1.5em;
+    font-size: 1.2rem;
+    text-align: left;
+
+}
+
+.sandwich__item {
+    position: relative;
+    align-items: center;
+    display: block;  /* Es necesario para que el after funcione como esperamos */
+}
+
+.sandwich__item:hover{
+    background-color: rgba(204, 201, 145, 0.224);
+}
+.sandwich__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.1px;
+    background-color: currentColor;  /* Esto hará que el subrayado sea del mismo color que el texto */
+    transform: scaleX(0);
+    transform-origin: bottom center;  /* Esto es para que el efecto comience desde la derecha */
+    transition: transform 300ms ease-in-out;  /* Aquí puedes ajustar la duración del efecto */
+    
+}
+
+.sandwich__item:hover::after {
+    transform: scaleX(0.6);
+    /* Esto es para que el efecto termine en la izquierda cuando ya no se pasa el mouse por encima */  
+}
+
+
+.sandwich__item__title {
+    padding-left: 2em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.sandwich__item__price {
+    padding-right: 2em;
+    display: inline-block;
+    float: right;
+    /* Alinea el precio a la derecha */
+}
+.items-container{
+
+    background-color: rgba(232, 241, 188, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .sandwich__item{
+        padding: 0.5em;
+    }
+    .items-container{
+        padding: 1em 2em;
+    }
+    
+    .sandwich__item__title{
+        font-size: 1em;
+        text-align: left;
+        padding-left: 0em;
+    }
+
+    .sandwich__item__price{
+        padding-top: 0.09em;
+        display: block;
+        float: none;
+        padding-right: 0em;
+        font-size: 1em;
+        color: rgb(73, 72, 72);
+    }
+}

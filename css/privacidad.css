@@ -1,0 +1,104 @@
+/* .............................Parte de Melisa Jiménez............................. */
+
+
+     .terminosycondiciones  h1 {
+    font-size: 5rem !important;
+      }
+
+      .terminosycondiciones strong {
+        font-size: 3rem !important;
+      }
+    
+      .terminosycondiciones p {
+        font-size: 3rem !important;
+      }
+    
+
+.terminosycondiciones {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+
+
+/* ------------------------------------------------MEDIAS QUERIES------------------------------------------------ */
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .terminosycondiciones h1 {
+     font-size: 5rem !important;
+     }
+
+     .terminosycondiciones strong {
+    font-size: 3rem !important;
+     }
+
+     .terminosycondiciones  {
+    font-size: 3rem !important;
+    }
+
+}
+
+    @media screen and (min-width: 500px) and (max-width: 768px) {
+        
+        .terminosycondiciones h1 {
+    font-size: 10rem !important;
+      }
+
+      .terminosycondiciones strong {
+        font-size: 8rem !important;
+      }
+    
+      .terminosycondiciones p {
+        font-size: 8rem !important;
+      }
+    
+
+    }
+
+        @media screen and (min-width: 325px) and (max-width: 499px) {
+                 
+            .main-container, .terminosycondiciones h1 {
+    font-size: 10rem !important;
+   
+      }
+
+      .main-container, .terminosycondiciones strong {
+        font-size: 8rem !important;
+       
+      }
+    
+      .main-container, .terminosycondiciones p {
+        font-size: 8rem !important;
+        
+      }
+    
+        }
+
+            @media screen and (min-width: 220px) and (max-width: 324px) {
+                .terminosycondiciones h1 {
+                    font-size: 10.5rem !important;
+                   
+                      }
+                
+                      .terminosycondiciones strong {
+                        font-size: 8.5rem !important;
+                      
+                      }
+                    
+                      .terminosycondiciones p {
+                        font-size: 7.5rem !important;
+                      
+                      }
+            }
+
+                @media screen and (min-width: 194px) and (max-width: 220px) {
+                }
+
+
+
+
+        
+/*.............................Fin de la parte de Melisa Jiménez............................. */

@@ -1,0 +1,543 @@
+<!-- .............................Parte de Melisa Jiménez............................. -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>La Masa de Don Calvo - Pizzería</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Poppins:ital,wght@1,100&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- INICIO HEADER-->
+ 
+    
+    <header>
+        <nav class="navbar container navbar-expand-lg">
+            <picture class="navbar__logo"> 
+                <a href="./index.html">
+                    <img class="img-fluid" src="../img/logopizzaynombre.png" alt="Logo de La Masa de Don Calvo - Pizzería">
+                </a>
+            </picture>
+
+     
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link with-icon" href="./menu.html">MENÚ </a>
+                    
+                </li>
+
+
+                <li>
+                    <a class="navbar__link" href="./sucursales.html">SUCURSALES</a>
+                </li>
+
+
+                <li class="navbar__item with-submenu" id="contacto-menu">
+                    <a class="navbar__link with-icon" href="./contacto.html">CONTACTO <iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="../paginas/atalcliente.html" class="submenu__link">Atención al cliente</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="../paginas/rrhh.html" class="submenu__link">Trabajá con nosotros</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="navbar__link" href="./login.html">LOGIN</a>
+                </li>
+
+
+                
+                <li>
+                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon> PEDÍ ONLINE</a>
+                </li>
+
+                      
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- FIN HEADER -->
+
+    <!-- INICIO SECTION CON FONDO DE PIZZA -->
+    <section class="hero">
+        <article class="hero__content container"> 
+            <h3 class="hero__title" >¡PEDÍ ONLINE Y RETIRÁ CUANDO QUIERAS!</h3>
+            <p class="hero__text" >Adelantá tu pedido por nuestra web ¡Y PROGRAMÁ TU VISITA AL LOCAL!</p>
+            <a class="hero__link"  href="./pedironline.html">PEDIR ONLINE</a>
+        </article>
+    </section>
+    <!-- FIN DEL SECTION CON FONDO DE PIZZA -->
+
+    <!--PIZZAS PRINCIPALES-->
+    <main class="main-container">
+
+        <div class="titulosseparadores-container">
+            <h4 class="titulosseparadores">
+                ALGUNAS DE NUESTRAS PIZZAS:
+            </h4>
+        </div>
+
+        
+
+
+
+    <!-- tarjetas -->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+        <div class="col  d-flex justify-content-center">
+          <div class="card h-100 ">
+            <img src="../img/pizzas/pizzaMuzza.webp"   class="fotopizza mx-auto d-block" style="width: 17rem; padding: 1rem;" alt="...">
+            <div class="card-body col-sm">
+              <h5 class="card-title col-sm" style="font-size: 2rem; text-align: center;">Muzzarella</h5>
+              <p class="card-text col-sm text-sm" style="font-size: 1.5rem;text-align: center;">Salsa de tomate, muzzarella, aceitunas verdes y orégano.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+              <img src="../img/pizzas/pizza-fugazzeta.webp"   class="fotopizza mx-auto d-block" style="width: 17rem; padding: 1rem;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Fugazzeta</h5>
+                <p class="card-text" style="font-size: 1.5rem;text-align: center;">Cebolla juliana, orégano, muzzarella, aceite de oliva, aceitunas verdes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+              <img src="../img/pizzas/pizza-jamonymorron.webp"   class="fotopizza mx-auto d-block" style="width: 17rem; padding: 1rem;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Jamón y morrón</h5>
+                <p class="card-text" style="font-size: 1.5rem;text-align: center;">Salsa de tomate, muzzarella, jamón cocido, morrones, aceitunas verdes y orégano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+              <img src="../img/pizzas/pizzaMuzza.webp"   class="fotopizza mx-auto d-block" style="width: 17rem; padding: 1rem;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Napolitana</h5>
+                <p class="card-text" style="font-size: 1.5rem;text-align: center;">Salsa de tomate, muz., rodajas de tom., ajo picado, albahaca, queso provolone, aceitunas verdes y orégano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+              <img src="../img/pizzas/pizzaMuzza.webp"   class="fotopizza mx-auto d-block" style="width: 17rem; padding: 1rem;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Calabresa</h5>
+                <p class="card-text" style="font-size: 1.5rem;text-align: center;">Salsa de tomate, muzzarella, longaniza calabresa, rodajas de tomate, aceitunas verdes y orégano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="card h-100">
+              <img src="../img/pizzas/pizzaMuzza.webp"   class="fotopizza mx-auto d-block" style="width: 17rem; padding: 1rem;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Rúcula</h5>
+                <p class="card-text" style="font-size: 1.5rem;text-align: center;">Salsa de tomate, muzzarella, rúcula, aceitunas verdes y orégano.</p>
+              </div>
+            </div>
+          </div>
+
+       
+      </div>
+
+
+
+
+
+        <!-- <div class="container">
+        
+            <div class="row">
+              
+    
+                <div class="col-lg-4 col-md-4 col-sm-12" style="width: 18rem;">
+                    <section class="elemento__pizza  col-lg-4 col-md-12 col-sm-12 mb-4"  style="width: 18rem;"rw     >
+                    <picture class="elemento__cover">
+                        <img class="card-img-top" src="" alt="Una pizza con mozzarella, salsa de tomate y aceitunas">
+                    </picture>
+                    <article class="elemento__content">
+                        <h5 class="card-title" style="font-size: 2rem;">Mozzarella</h5>
+                        <p class="card-text elemento__text">Salsa de tomate, muzzarella, aceitunas verdes y orégano</p>
+                    </article>
+                </section>
+        </div> -->
+                    
+<!--             
+            <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <section class="elemento__pizza card col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <picture class="elemento__cover">
+                            <img class="card-img-top" src="../img/pizzas/pizza-fugazzeta.webp" alt="Pizza fugazzeta">
+                        </picture>
+                        <article class="elemento__content">
+                            <h5 class="card-title elemento__title">Fugazzetta</h3>
+                            <p class="card-text elemento__text">Cebolla juliana, orégano, muzzarella, aceite de oliva, aceitunas verdes  </p>
+                            
+                        </article>
+                       
+                    </section>
+
+            </div>
+                  
+             -->
+            
+                 <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+                    <section class="elemento__pizza card col-lg-4 col-md-6 col-sm-12 mb-4">
+            
+                        <picture class="elemento__cover">
+                        <img class="card-img-top" src="../img/pizzas/pizza-jamonymorron.webp" alt="Pizza de jamón y morrón">
+                        </picture>
+                            <article class="elemento__content">
+                                <h5 class="card-title elemento__title">Jamón y morrón</h5>
+                                <p class="card-text elemento__text">Salsa de tomate, muzzarella, jamón cocido, morrones, aceitunas verdes y orégano</p>
+                            </article>
+                </section>
+                
+
+                 </div>   
+               -->
+            
+    
+    <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+        <section class="elemento__pizza card col-lg-3 col-md-4 col-sm-6">
+            <picture class="elemento__cover">
+                <img class="card-img-top" src="../img/pizzas/pizzaNapolitana.webp" alt="Una pizza napolitana">
+            </picture>
+            <article class="elemento__content">
+                <h5 class="card-title elemento__title">Napolitana</h5>
+                <p class="card-text elemento__text">Salsa de tomate, muz., rodajas de tom., ajo picado, albahaca, queso provolone, aceitunas verdes y orégano</p>
+            </article>
+        </section>
+
+    </div>
+                         -->
+            
+            
+<!--                         
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+
+                <section class="elemento__pizza card col-lg-3 col-md-4 col-sm-6">
+                    <picture class="elemento__cover">
+                        <img class="card-img-top" src="../img/pizzas/Calabresa.webp" alt="Pizza calabresa">
+                    </picture>
+                    <article class="elemento__content">
+                        <h5 class="card-title elemento__title">Calabresa</h5>
+                        <p class="card-text elemento__text">Salsa de tomate, muzzarella, longaniza calabresa, rodajas de tomate, aceitunas verdes y orégano.</p>
+                    </article>
+                </section>
+            </div>
+            -->
+            
+<!--             
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <section class="elemento__pizza card col-lg-3 col-md-4 col-sm-6">
+                    <picture class="elemento__cover">
+                        <img class="card-img-top" src="../img/pizzas/pizzaRucula.webp" alt="Pizza de rúcula">
+                    </picture>
+                    <article class="elemento__content">
+                        <h5 class="card-title elemento__title">Rúcula</h5>
+                        <p class="card-text elemento__text">Salsa de tomate, muzzarella, rúcula, aceitunas verdes y orégano</p>
+                    </article>
+                </section> 
+
+            </div>
+            
+             -->
+            
+                
+          
+    
+    
+
+
+
+
+
+
+
+<br><br><br>
+
+<div class="d-flex justify-content-center mt-5">
+    <a class="btn btn-danger btn-lg custom-btn" style="padding: 2rem 4rem; border-radius: 1.5rem; font-size: 2.5rem;" href="./menu.html">
+        VER MENÚ COMPLETO
+    </a>
+</div>
+
+
+
+
+        <!-- Fin de secciones de comidas -->
+
+   <br><br><br><br><br>
+
+   <div class="titulosseparadores-container">
+    <h4 class="titulosseparadores">
+        OPCIONES DE DELIVERY
+    </h4>
+
+    <section class="delivery">
+        <div class="iconos__delivery">
+            <a href="https://www.pedidosya.com.ar/">
+                <img src="../img/delivery/pedidosya.webp" alt="icono de pedidos ya">
+            </a>
+        </div>
+
+        <div class="iconos__delivery">
+            <a href="https://www.rappi.com.ar/">
+                <img src="../img/delivery/rappi.webp" alt="icono de rappi">
+            </a>
+        </div>
+
+        <div class="iconos__delivery">
+            <a href="./pages/whatsapp.html">
+                <img src="../img/delivery/wsp.webp" alt="icono de whatsapp">
+            </a>
+        </div>
+
+    </section>
+
+
+    <div class="pedidoonline"> 
+        <p>
+            <span class="titulosubrayados">
+                También podés pedir online y retirar tu pedido en el local:
+            </span>
+        </p>
+        <br><br><br>
+        <div class="d-flex justify-content-center mt-5">
+            <a  class="btn btn-danger btn-lg custom-btn" style="padding: 2rem 4rem; border-radius: 1.5rem; font-size: 2.5rem;"   href="./pedironline.html">PEDÍ ONLINE Y RETIRÁ</a>
+        
+    </div>
+
+
+
+
+</div>
+   
+</div>
+
+<br><br><br><br>
+
+
+<!--SUCURSALES-->
+<section class="sucursales">
+    <h2 class="titulosseparadores">SUCURSALES</h2>
+    <div class="sucursales-container">
+        <div class="sucursal sucursal-pinamar">
+            <h3 class="sucursal-titulo">Sucursal Pinamar</h3>
+            <div class="sucursal-texto">
+                <p class="sucursal-parrafo"> <iconify-icon icon="grommet-icons:map"></iconify-icon> Dirección: Av. Robette 4360, Buenos Aires</p>
+                <p class="sucursal-parrafo"><iconify-icon icon="mi:calendar"></iconify-icon> Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+                <p class="sucursal-parrafo"><iconify-icon icon="ph:phone-bold"></iconify-icon> Teléfono: 02254511234</p>
+            </div>
+        </div>
+        <div class="sucursal sucursal-caseros">
+            <h3 class="sucursal-titulo">Sucursal Caseros</h3>
+            <div class="sucursal-texto">
+                <p class="sucursal-parrafo"> <iconify-icon icon="grommet-icons:map"></iconify-icon> Dirección: Guemes 4000, Buenos Aires</p>
+                <p class="sucursal-parrafo"><iconify-icon icon="mi:calendar"></iconify-icon> Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+                <p class="sucursal-parrafo"><iconify-icon icon="ph:phone-bold"></iconify-icon> Teléfono: 1164890786</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="d-flex justify-content-center mt-5">
+        <a href="./sucursales.html" class="btn btn-danger btn-lg" style="padding: 2rem 4rem; border-radius: 1.5rem; font-size: 2.5rem;">
+            VER MAPA
+        </a>
+    </div>
+</section>
+
+
+
+
+<!--FIN DE SUCURSALES-->
+
+
+
+<br><br><br><br><br>
+
+
+
+<!-- inicio Historia de la Pizzería -->
+<div>
+    <h2 class="titulosseparadores">NUESTRA HISTORIA</h2>
+    <section class="historia container">
+        <div class="historia__content">
+           
+            <div class="historia__text">
+                <p>
+                    Somos una empresa familiar con una rica tradición gastronómica, fundada en 1995 y dedicada a la preparación de exquisitas pizzas a la piedra, minutas, sandwiches, picadas, postres y una amplia variedad de bebidas, todo ello manteniendo los más altos estándares de calidad y sabor.
+                </p>
+               <br><br><br>
+               <!-- <div class="historia__image">
+                <img src="../img/pizzerialocal/camareroconpizza.webp" alt="Imagen de la pizzería">
+            </div> -->
+                <p>
+                    La Masa de Don Calvo no es simplemente un restaurante; es un legado, un sueño hecho realidad. Nuestra historia comenzó con la pasión inquebrantable de Don Calvo por la auténtica pizza a la piedra y se ha expandido para abarcar un menú diverso que satisface todos los gustos. A lo largo de los años, nuestra pizzería se ha convertido en un lugar de encuentro querido por amantes de la comida en todas sus formas.
+                </p>
+                <br><br><br>
+               
+                <p>
+                    Nacimos como un modesto rincón en el corazón de Pinamar y hemos crecido gracias a la dedicación incansable de nuestro equipo y a la selección cuidadosa de los ingredientes más frescos y sabrosos. Cada plato que sale de nuestra cocina cuenta una historia de tradición y sabor que hemos preservado con amor y devoción.
+                </p>
+                <br><br>
+                <p>
+                    Te extendemos una cálida invitación a ser parte de nuestra historia y a disfrutar de la mejor comida que jamás hayas probado. En La Masa de Don Calvo, no solo te servimos comida; te brindamos una experiencia culinaria que te hará volver por más en cada visita.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+<!--FIN DE LA HISTORIA-->
+
+        
+
+
+
+<!-- INICIO DE PROMOCIONES  -->
+
+        <!-- <section class="slider container">
+            <h2 class="slider__title">Últimas promociones</h2>
+            <ul class="slider__items">
+
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">PROMO</span>
+                                <img class="card-item__img--front" src="../img/pizzas/pizzafamiliar.webp" alt="Promoción de pizza">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__title">PROMOCIÓN</p>
+                                <h4 class="card-item__name">Pizza Familiar</h4>
+                                <p class="card-item__price">$1999.99.-</p>
+                                <p class="card-item__promo">Con una bebida gratis</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+
+
+                <li class="slider__item">
+                    <article class="card-item__cover">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item">
+                                <span class="card-item__tag">PROMO</span>
+                                <img class="card-item__img--front" src="../img/la-tablita-picadas.webp" alt="Pizza en oferta">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__license">OFERTA ESPECIAL</p>
+                                <h4 class="card-item__name">Picada familiar</h4>
+                                <p class="card-item__price">$2999.99.-</p>
+                                <p class="card-item__promo">Con compra de 2 pizzas</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+
+            </ul>
+        </section> -->
+
+
+
+        <div class="fotorandom" style=" justify-content: center; display: grid; max-width: 50rem;
+        margin: auto; ">
+            <img id="random-fox-image" src="" alt="Random Fox Image">
+            <button id="refresh-button" class="btn btn-dark my-3">Refresh Image</button>
+        </div>
+
+    </main>
+
+
+<!-- FIN PROMOCIONES -->
+<footer class="footer">
+    <div class="footer__rectangle">
+        <!-- Logo a la izquierda -->
+        <picture class="footer__logo"> 
+            <a href="./index.html">
+                <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
+            </a>
+        </picture>
+
+        <div class="footer__button">
+            <a href="./registro.html">Registro</a>
+        </div>
+     
+  
+       <div class="footer__button">
+            <a href="./privacidad.html">Privacidad</a>
+        </div>
+
+        <div class="footer__button">
+            <a href="./condicionesdeuso.html">Condiciones de uso</a>
+        </div>
+      
+        <!-- Horarios y sucursales a la derecha -->
+        <div class="footer__info">
+            <p class="footer__info">HORARIO DE ATENCIÓN:</p>
+                <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+                
+        </div>
+
+
+    </div> 
+    <!--Línea separadora -->
+    <hr class="footer__line">
+    <!-- Logos de redes sociales -->
+    <div class="footer__social">
+        <p>Seguinos en redes sociales:</p>
+        <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+        <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon icon="simple-icons:x"></iconify-icon></a>
+        <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+    </div>
+    <!-- Derechos de autor y créditos -->
+    <div class="footer__copy">
+        <p class="copyright">Todos los derechos reservados &copy; 2023 - La Masa de Don Calvo</p>
+        <cite>Desarrolladores: Cristopher Herrera y Melisa Jiménez</cite>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+
+
+
+    <script src="../javascript/api.js"></script>
+
+</body>
+</html>
+
+<!-- .............................Fin de la parte de Melisa Jiménez............................. -->

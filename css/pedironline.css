@@ -1,0 +1,490 @@
+/* .............................Parte de Melisa Jiménez............................. */
+
+
+.titulos {
+    font-family: var(--base-font);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark-solid);
+    padding: 10px; 
+    
+}
+
+
+.mensaje {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+
+  .elegirtienda {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--font-medium);
+    color: #424452;
+    height: 35px;
+    padding: 3px!important;
+    border: 2px solid #cac8c8!important;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 15px;
+  }
+  
+  .custom-container {
+    width: 50%; 
+    margin: auto; 
+    font-size: 2.5em; 
+    text-align: center !important;
+}
+
+.form-control {
+    font-size: 0.8em !important; 
+    border-radius: 20px !important; /* Agrega un borde redondeado */
+    border-color: #ff0202 !important; /* Cambia el color del borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important; /* Agrega una sombra alrededor del select */
+    text-align: center !important;
+}
+
+.custom-select {
+    font-size: 0.7em !important;
+    font-weight: 600 !important;
+    background: linear-gradient(to left, #eab5b5, #faf7f7) !important; /* Cambia el color de fondo del select a un degradado */
+    color: rgb(0, 0, 0) !important; /* Cambia el color del texto del select a blanco */
+}
+
+
+
+article {
+display: flex;
+flex-direction: column;
+justify-items: center;
+margin: 0 auto;
+text-align: center;
+}
+
+
+.cart__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos horizontalmente */
+    justify-content: center; /* Alinea los elementos verticalmente */
+    font-family: var(font-inter);
+    margin: 0;
+    border: 1px solid var(--fondo-claro);
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: var(--font-large);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-12);
+}
+
+.cart__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fondo-claro);
+    box-shadow: 1px 1px 12px var(--negro-30);
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+h2.cart__title {
+    display: inline;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: var(--font-46-display);
+    border-bottom: 4px solid var(--rojo);
+}
+
+.producto {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 5px dotted var(--primary-300);
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+h3 {
+    font-size: var(--font-large);
+}
+
+p {
+    padding: 1rem;
+}
+
+
+.productotarjeta {
+    padding: 2rem;
+  
+}
+
+.card-body {
+    background: linear-gradient(to left, #fddede, #ffffff66) !important; 
+    border-radius: 5rem;
+}
+
+.card-title {
+    font-weight: 700; 
+}
+
+.card-text {
+    font-weight: 500; 
+}
+
+
+
+.agregar-al-carrito{
+    text-align: center;
+    justify-self: center;
+    border-radius: 6rem !important;
+    font-size: 1.5rem !important;
+    padding: 1rem;
+    margin: 0 auto;
+  
+}
+
+
+
+
+button[type="submit"] {
+    
+    background-color: var(--primary-solid);
+    color: white;
+    padding: var(--spacing-12) var(--spacing-24);
+    border: none;
+    border-radius: 4px;
+    font-size: var(--font-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    
+    margin: 0 auto; 
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-900);
+}
+
+
+.cart__content {
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+
+
+   
+}
+
+#carrito {
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    
+}
+
+#total {
+    font-size: 2.5rem;
+}
+
+
+#metodo-pago {
+text-align: center;
+font-size: 1.7rem;
+
+}
+
+
+#pagoForm {
+    font-size: 2rem; 
+}
+
+.titulos {
+    padding: 2rem;
+}
+
+.tipodepago {
+
+padding: 2rem 0.5rem;
+ 
+}
+
+
+#total {
+    font-weight: 500;
+    text-decoration: underline;
+    background: linear-gradient(to left, #ffffff57, #f4caca66) !important; 
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+
+#carrito li {
+    background: linear-gradient(to left, #ffffff48, #f4caca66) !important;  
+    font-weight: 500;
+    font-family: var(--font-lobster);
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+
+/* medias queries */
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+
+    
+    
+    .titulosseparadores {
+        font-size: 10rem;
+    }
+
+    .mensaje {
+        font-size: 8.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .productotarjeta, .card {
+        max-width: 140rem !important;
+    }
+
+
+    .form-group, .titulos, .form-control, .custom-select, #metodo-pago {
+      font-size: 7rem;
+      padding: 4rem;
+   
+    }
+
+    .agregar-al-carrito {
+        font-size: 4.5rem !important;
+    }
+
+    button[type="submit"] {
+       
+     font-size: 4rem;
+    }
+
+    #carrito, #total, #pagoForm {
+        font-size: 5rem;
+    }
+
+    .btncantidadmenos, .btncantidadmas, .btneliminar{
+        font-size: 5rem !important; 
+    }
+
+    .mensaje-error, .mensaje-comprarealizada{
+        font-size: 6rem !important; 
+        text-align: center;
+    }
+
+
+
+  }
+  
+
+  @media screen and (min-width: 281px) and (max-width: 499px) {
+
+   
+    
+    .titulosseparadores {
+        font-size: 10rem;
+    }
+.titulos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+    .mensaje {
+        font-size: 8.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .productotarjeta, .card {
+        max-width: 140rem !important;
+    }
+
+
+    .form-group, .titulos, .form-control, .custom-select, #metodo-pago {
+      font-size: 7rem;
+      padding: 4rem;
+   
+    }
+
+    .agregar-al-carrito {
+        font-size: 4.5rem !important;
+    }
+
+    button[type="submit"] {
+       
+     font-size: 4rem;
+    }
+
+    #carrito, #total, #pagoForm {
+        font-size: 5rem;
+    }
+
+    .btncantidadmenos, .btncantidadmas, .btneliminar{
+        font-size: 5rem !important; 
+    }
+
+    .mensaje-error, .mensaje-comprarealizada{
+        font-size: 6rem !important; 
+        text-align: center;
+    }
+
+    .btncantidadmenos{
+     
+   padding: 2.2rem !important;
+
+        margin: 2.2rem !important;
+    }
+
+    .btncantidadmas{
+     
+        padding: 2rem !important;
+     
+             margin: 2rem !important;
+         }
+     
+
+    .btneliminar{
+     
+        margin: 3rem !important;
+    }
+
+
+
+  }
+
+
+
+
+
+  @media screen and (min-width: 220px) and (max-width: 280px) {
+
+   
+
+    .titulosseparadores {
+        font-size: 10rem;
+    }
+
+    .mensaje {
+        font-size: 8.5rem;
+        font-weight: bold;
+    
+    }
+
+    .productotarjeta, .card {
+        max-width: 140rem !important;
+    }
+
+
+    .form-group, .custom-select, #metodo-pago {
+      font-size: 5rem;
+     
+      width: 100%;
+   
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+
+    .form-control, .titulos, .custom-container {
+        font-size: 7rem;
+        max-width: 100%;
+        padding: 0 !important;
+        margin-bottom: 5rem;
+    }
+
+    
+    .agregar-al-carrito {
+        font-size: 4.5rem !important;
+    }
+
+    button[type="submit"] {
+       
+     font-size: 4rem;
+     padding: 3rem;
+    }
+
+    #carrito, #total {
+        font-size: 5rem;
+    }
+
+    #efectivo,  #tarjeta {
+        padding-right: 2rem !important;
+        margin-right: 3rem !important;
+        padding-bottom: 5rem;
+    }
+
+    #pagoForm {
+        font-size: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+.titulos {
+    padding-top: 5rem !important;
+}
+
+.productotarjeta, .card {
+    font-size: 3rem;
+}
+
+.card-title {
+    font-size: 6rem;
+}
+
+
+    .btncantidadmas{
+        font-size: 5rem !important; 
+   padding: 2rem !important;
+        margin: 2rem !important;
+    }
+
+    .btncantidadmenos{
+        font-size: 5rem !important; 
+   padding: 2rem !important;
+
+        margin: 2rem !important;
+    }
+
+
+    .btneliminar{
+        font-size: 4.7rem !important; 
+        margin: 3rem !important;
+    }
+
+    .mensaje-error, .mensaje-comprarealizada{
+        font-size: 6rem !important; 
+        text-align: center;
+    }
+
+
+
+  }
+  
+
+  
+
+
+/*.............................Fin de la parte de Melisa Jiménez............................. */
