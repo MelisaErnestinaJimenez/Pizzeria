@@ -3,151 +3,142 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de RRHH</title>
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/rrhh.css">
-<link rel="stylesheet" href="../css/index.css">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles-nav.css">
+    <link rel="stylesheet" href="../css/footer-query.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-   
+
     <header>
-        <nav class="navbar container navbar-expand-lg">
-            <picture class="navbar__logo"> 
-                <a href="./index.html">
-                    <img class="img-fluid" src="../img/logopizzaynombre.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-                </a>
-            </picture>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logopizzaynombre.png"" alt=" Logo"></a>
 
-     
-
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link with-icon" href="./menu.html">MENÚ </a>
-                    
-                </li>
+            </div>
+            <ul class="menu">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li class="dropdown">
+                    <a href="contacto.html">Contacto
+                        <iconify-icon icon="carbon:chevron-down"></iconify-icon>
+                    </a>
 
 
-                <li>
-                    <a class="navbar__link" href="./sucursales.html">SUCURSALES</a>
-                </li>
-
-
-                <li class="navbar__item with-submenu" id="contacto-menu">
-                    <a class="navbar__link with-icon" href="./contacto.html">CONTACTO <iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                    </iconify-icon>
                     <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="../paginas/atalcliente.html" class="submenu__link">Atención al cliente</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="../paginas/rrhh.html" class="submenu__link">Trabajá con nosotros</a>
-                        </li>
+                        <li><a href="atalcliente.html">Atención al cliente</a></li>
+                        <li><a href="rrhh.html">Trabajá con Nosotros</a></li>
                     </ul>
                 </li>
-
-                <li>
-                    <a class="navbar__link" href="./login.html">LOGIN</a>
-                </li>
-
-
-                
-                <li>
-                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon> PEDÍ ONLINE</a>
-                </li>
-
-                      
-                    </ul>
+                <li><a href="login-usuario.html">Login</a></li>
+                <li class="carrito">
+                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon>
+                        PEDÍ ONLINE</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    
+
     <div class="main-container">
         <h2 class="titulosseparadores formrrhh">TRABAJÁ CON NOSTROS</h2>
         <div class="container">
-         
+
             <form action="tu-archivo-de-procesamiento.php" method="post" enctype="multipart/form-data">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
-                
+
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
-                
+
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" required>
-                
+
                 <label for="cv">Cargar CV (PDF o Word):</label>
                 <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-                
+
                 <label for="mensaje">Mensaje (opcional):</label>
                 <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-                
+
                 <label for="experiencia">Experiencia laboral:</label>
                 <textarea id="experiencia" name="experiencia" rows="4"></textarea>
-                
+
                 <label for="educacion">Educación:</label>
                 <textarea id="educacion" name="educacion" rows="4"></textarea>
-                
+
                 <label for="habilidades">Habilidades:</label>
                 <input type="text" id="habilidades" name="habilidades">
-                
+
                 <label for="linkedin">Perfil de LinkedIn:</label>
                 <input type="url" id="linkedin" name="linkedin">
-                
+
                 <label for="disponibilidad">Disponibilidad:</label>
-                <select id="disponibilidad" name="disponibilidad">
+                <select class = "container__element" id="disponibilidad" name="disponibilidad">
                     <option value="tiempo-completo">Tiempo completo</option>
                     <option value="medio-tiempo">Medio tiempo</option>
                     <option value="contrato">Contrato</option>
                     <option value="freelance">Freelance</option>
                 </select>
-                
+
                 <label for="referencia">Referencia (opcional):</label>
                 <input type="text" id="referencia" name="referencia">
                 <br><br>
-                <button type="submit">Enviar</button>
+                <button class = "container__button" type="submit">Enviar</button>
             </form>
         </div>
     </div>
-    
+
     <footer class="footer">
         <div class="footer__rectangle">
             <!-- Logo a la izquierda -->
-            <picture class="footer__logo"> 
-            <a href="./index.html">
-                <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-            </a>
-        </picture>
-            
-           
-           <div class="footer__button">
+            <picture class="footer__logo">
+                <a href="./index.html">
+                    <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
+                </a>
+            </picture>
+
+
+            <div class="footer__button">
                 <a href="./privacidad.html">Privacidad</a>
             </div>
-    
+
             <div class="footer__button">
                 <a href="./condicionesdeuso.html">Condiciones de uso</a>
             </div>
-           
-             
-    
+
+
+
             <!-- Horarios y sucursales a la derecha -->
             <div class="footer__info">
                 <p class="footer__info">HORARIO DE ATENCIÓN:</p>
-                    <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
-                    
+                <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+
             </div>
-        </div> 
+        </div>
         <!--Línea separadora -->
         <hr class="footer__line">
         <!-- Logos de redes sociales -->
         <div class="footer__social">
             <p>Seguinos en redes sociales:</p>
-            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
-            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon icon="simple-icons:x"></iconify-icon></a>
-            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="simple-icons:x"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ri:instagram-fill"></iconify-icon></a>
         </div>
         <!-- Derechos de autor y créditos -->
         <div class="footer__copy">
@@ -159,7 +150,9 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="../javascript/rrhh.js"></script>
+    <script src="../javascript/script-nav.js"></script>
 </body>
+
 </html>
 
 <!-- ........................Fin de la parte de Melisa Jiménez........................ -->

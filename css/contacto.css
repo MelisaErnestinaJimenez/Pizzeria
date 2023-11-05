@@ -1,7 +1,7 @@
 /* .............................Parte de Melisa Jiménez............................. */
 
 .contactobackground {
-  
+
   margin-bottom: 5rem;
 }
 
@@ -25,88 +25,86 @@
   border: none !important;
 }
 
-iconify-icon {
-  font-size: 4rem;
-}
 
 .card-title {
   font-size: 3rem !important;
 }
 
 .cartel {
-  
-        width: 50%;
-        height: 25%;
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        background-color: var(--light-bg-solid);
-        padding: var(--spacing-8); 
-        margin: 0 auto; 
-        border-radius: 50px;
-        font-weight: 500;
-        text-align: center;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    
-    .cartel a {
-        text-decoration: none;
-        color: inherit; 
-    }
-    
-    .cartel:hover {
-        background-color: var(--primary-900);
-        color: var(--light-font-solid);
-    }
-    
+
+  width: 50%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: var(--light-bg-solid);
+  padding: var(--spacing-8);
+  margin: 0 auto;
+  border-radius: 50px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cartel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cartel:hover {
+  background-color: var(--primary-900);
+  color: var(--light-font-solid);
+}
+
 
 
 /* mensaje principal */
 .mensaje {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /*lista de redes sociales */
-  .redes-sociales {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  .redes-lista {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .redes-lista li {
-    margin-bottom: 10px;
-  }
-  
-  /*lista de números de contacto por sucursal */
-  .sucursales-tel {
-    font-size: 10rem;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  .sucursales-lista {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sucursales-lista li {
-    margin-bottom: 10px;
-  }
-  
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*lista de redes sociales */
+.redes-sociales {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.redes-lista {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.redes-lista li {
+  margin-bottom: 10px;
+}
+
+/*lista de números de contacto por sucursal */
+.sucursales-tel {
+  font-size: 10rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sucursales-lista {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sucursales-lista li {
+  margin-bottom: 10px;
+}
+
 
 /*sucursales tarjeta estilo*/
-.card-img-top, .card-img-overlay {
+.card-img-top,
+.card-img-overlay {
   border-radius: 5rem !important;
 }
 
@@ -120,50 +118,50 @@ iconify-icon {
 }
 
 .iconify {
-  font-size:  3rem !important;
+  font-size: 3rem !important;
   margin-right: 0.5rem;
   text-shadow: 2px 2px 2px #000000 !important;
 }
 
 
-  
-  /* "Si deseas enviarnos comentarios" y "Si deseas trabajar con nosotros" */
-  .enviar-comentarios,
-  .trabajar-con-nosotros {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  .enviar-comentarios a,
-  .trabajar-con-nosotros a {
-    text-decoration: none;
-    color: #007BFF; 
-    font-weight: bold;
-  }
-  
-  .enviar-comentarios a:hover,
-  .trabajar-con-nosotros a:hover {
-    text-decoration: underline; 
-  }
-  
+
+/* "Si deseas enviarnos comentarios" y "Si deseas trabajar con nosotros" */
+.enviar-comentarios,
+.trabajar-con-nosotros {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.enviar-comentarios a,
+.trabajar-con-nosotros a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.enviar-comentarios a:hover,
+.trabajar-con-nosotros a:hover {
+  text-decoration: underline;
+}
+
 
 
 
 
 
 .contacto-info {
-    text-align: center;
-    font-size: 24px; 
+  text-align: center;
+  font-size: 24px;
 }
 
 .titulos {
-    font-family: var(--base-font);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--dark-solid);
-    padding: 10px; 
-    
+  font-family: var(--base-font);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark-solid);
+  padding: 10px;
+
 }
 
 
@@ -188,15 +186,15 @@ iconify-icon {
 
   .mensaje {
     font-size: 6rem;
-      }
-    
-.card-title {
-  font-size: 6rem;
-}
+  }
 
-.iconify-icon {
-  font-size: 10rem !important;
-}
+  .card-title {
+    font-size: 6rem;
+  }
+
+  .iconify-icon {
+    font-size: 10rem !important;
+  }
 
 
   .list-unstyled {
@@ -204,19 +202,19 @@ iconify-icon {
     text-align: center;
   }
 
- .iconify {
-  font-size: 6rem !important;
- }
+  .iconify {
+    font-size: 6rem !important;
+  }
 
- .col-md-6 {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
- }
+  .col-md-6 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
 
- .cartel a {
-  font-size: 7rem;
- }
+  .cartel a {
+    font-size: 7rem;
+  }
 
 }
 
@@ -225,69 +223,69 @@ iconify-icon {
 
   .mensaje {
     font-size: 6rem;
-      }
-    
-.card-title {
-  font-size: 6rem;
-}
+  }
 
-.iconify-icon {
-  font-size: 10rem !important;
-}
+  .card-title {
+    font-size: 6rem;
+  }
+
+  .iconify-icon {
+    font-size: 10rem !important;
+  }
 
   .list-unstyled {
     font-size: 6rem;
     text-align: center;
   }
 
- .iconify {
-  font-size: 6rem !important;
- }
+  .iconify {
+    font-size: 6rem !important;
+  }
 
- .col-md-6 {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
- }
+  .col-md-6 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
 
- .cartel a {
-  font-size: 5rem;
- }
+  .cartel a {
+    font-size: 5rem;
+  }
 
- .cartel {
-  width: 100rem;
- }
+  .cartel {
+    width: 100rem;
+  }
 
 
 }
 
- @media screen and (min-width: 220px) and (max-width: 324px) {
+@media screen and (min-width: 220px) and (max-width: 324px) {
 
   .mensaje {
     font-size: 6rem;
-      }
-    
-.card-title {
-  font-size: 6rem;
-}
+  }
 
-.iconify-icon {
-  font-size: 10rem !important;
-}
+  .card-title {
+    font-size: 6rem;
+  }
 
-.container {
-  width: 50rem !important;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  /* margin-left: -4rem !important;
+  .iconify-icon {
+    font-size: 10rem !important;
+  }
+
+  .container {
+    width: 50rem !important;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    /* margin-left: -4rem !important;
   margin-right: 8rem !important; */
-}
+  }
 
-.col-md-5 {
-   margin-left: -20rem !important;
-  margin-right: 8rem !important;
-}
+  .col-md-5 {
+    margin-left: -20rem !important;
+    margin-right: 8rem !important;
+  }
 
 
   .list-unstyled {
@@ -295,49 +293,50 @@ iconify-icon {
     text-align: center;
   }
 
- .iconify {
-  font-size: 3rem !important;
- }
+  .iconify {
+    font-size: 3rem !important;
+  }
 
- .col-md-6 {
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  margin-top: 10rem;
- }
+  .col-md-6 {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 10rem;
+  }
 
- .card {
-  display: flex;
-  justify-content: center;
-  width: 100% !important;
-  margin: 10rem !important;
-
-
- }
-
- .row {
-  display: flex;
-  justify-content: center;
- }
-
-.ml-auto, .mx-auto {
-  margin-left: 10rem !important;
-  margin-right: 10rem !important;
-}
-
-.text-center {
-  font-size: 5rem;
-}
+  .card {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin: 10rem !important;
 
 
-.cartel a {
-  font-size: 5rem;
- }
+  }
 
- .cartel {
-  width: 60rem;
- }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ml-auto,
+  .mx-auto {
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+  }
+
+  .text-center {
+    font-size: 5rem;
+  }
+
+
+  .cartel a {
+    font-size: 5rem;
+  }
+
+  .cartel {
+    width: 60rem;
+  }
 
 
 
@@ -350,54 +349,58 @@ iconify-icon {
 
   .mensaje {
     font-size: 6rem;
-      }
-    
-.card-title {
-  font-size: 6rem;
-}
+  }
 
-.iconify-icon {
-  font-size: 10rem !important;
-}
+  .card-title {
+    font-size: 6rem;
+  }
 
-.container {
-  width: 100%;
-}
+  .iconify-icon {
+    font-size: 10rem !important;
+  }
 
-.ml-auto, .mr-auto, .mx-auto {
-  margin: 0 !important;
-}
+  .container {
+    width: 100%;
+  }
+
+  .ml-auto,
+  .mr-auto,
+  .mx-auto {
+    margin: 0 !important;
+  }
+
   .list-unstyled {
     font-size: 3rem !important;
     text-align: center;
   }
 
- .iconify {
-  font-size: 3rem !important;
- }
+  .iconify {
+    font-size: 3rem !important;
+  }
 
- .col-md-6 {
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
- }
+  .col-md-6 {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
 
- .card {
+  .card {
 
-  width: 100rem !important;
-  margin: 10rem;
+    width: 100rem !important;
+    margin: 10rem;
 
- }
+  }
 
- .row {
-  display: flex;
-  justify-content: center;
- }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
 
-.ml-auto, .mx-auto {
- width: 50rem;
-}
+  .ml-auto,
+  .mx-auto {
+    width: 50rem;
+  }
 
 }
 

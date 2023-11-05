@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,166 +8,158 @@
 
     <title>La Masa de Don Calvo - Pizzería</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Poppins:ital,wght@1,100&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Poppins:ital,wght@1,100&family=Roboto&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/index.css"> 
+    <link rel="stylesheet" href="../css/index.css">
     <!-- <link rel="stylesheet" href="../css/login.css"> -->
     <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/styles-nav.css">
+    <link rel="stylesheet" href="../css/footer-query.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
 
     <!-- INICIO HEADER-->
- 
     <header>
-        <nav class="navbar container navbar-expand-lg">
-            <picture class="navbar__logo"> 
-                <a href="./index.html">
-                    <img class="img-fluid" src="../img/logopizzaynombre.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-                </a>
-            </picture>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logopizzaynombre.png"" alt=" Logo"></a>
 
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link with-icon" href="./menu.html">MENÚ </a>
-                    
-                </li>
-
-
-                <li>
-                    <a class="navbar__link" href="./sucursales.html">SUCURSALES</a>
-                </li>
+            </div>
+            <ul class="menu">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li class="dropdown">
+                    <a href="contacto.html">Contacto
+                        <iconify-icon icon="carbon:chevron-down"></iconify-icon>
+                    </a>
 
 
-                <li class="navbar__item with-submenu" id="contacto-menu">
-                    <a class="navbar__link with-icon" href="./contacto.html">CONTACTO <iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                    </iconify-icon>
                     <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="../paginas/atalcliente.html" class="submenu__link">Atención al cliente</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="../paginas/rrhh.html" class="submenu__link">Trabajá con nosotros</a>
-                        </li>
+                        <li><a href="atalcliente.html">Atención al cliente</a></li>
+                        <li><a href="rrhh.html">Trabajá con Nosotros</a></li>
                     </ul>
                 </li>
-
-                <li>
-                    <a class="navbar__link" href="./login.html">LOGIN</a>
-                </li>
-
-
-                
-                <li>
-                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon> PEDÍ ONLINE</a>
-                </li>
-
-                      
-                    </ul>
+                <li><a href="login-usuario.html">Login</a></li>
+                <li class="carrito">
+                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon>
+                        PEDÍ ONLINE</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    
+
 
     <main class="main-container">
         <h1 class="text-center main-title titulosseparadores">CREA TU CUENTA</h1>
         
         <div class="logincontainer d-flex justify-content-center align-items-center">
-            <h2 class="completaform text-center main-subtitle">Completa el siguiente formulario:</h2>
+            <h2>Completa el siguiente formulario:</h2>
     
-            <form class="mt-4 form-container">
-                <div class="form-group row">
-                    <div class="col-md-12 input-container">
-                        <label for="name" class="form-label" style="font-size: 2.2rem ; padding-right: 5rem;  margin: 1rem;">Nombre:</label>
+            <form class = "mt-4 form-container">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="name" class="labels" >Nombre:</label>
                         <input class="form-control transparent-input" style="font-size: 1.5rem;" type="text" name="name" id="name" placeholder="John">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-md-12 input-container">
-                        <label for="lastname" class="form-label" style="font-size: 2.2rem ; padding-right: 5rem;  margin: 1rem;">Apellido:</label>
-                        <input class="form-control transparent-input" style="font-size: 1.5rem;" type="text" name="lastname" id="lastname" placeholder="Doe">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="lastname" class="labels" >Apellido:</label>
+                        <input class=" form-control transparent-input" style="font-size: 1.5rem;" type="text" name="lastname" id="lastname" placeholder="Doe">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-md-12 input-container">
-                        <label for="email" class="form-label" style="font-size: 2.2rem ; padding-right: 8rem;  margin: 1rem;">Email:</label>
-                        <input class="form-control transparent-input" style="font-size: 1.5rem;" type="email" name="email" id="email" placeholder="johndoe@correo.com">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="email" class="labels" >Email:</label>
+                        <input class="form-control transparent-input" style="font-size: 1.5rem;"type="email" name="email" id="email" placeholder="johndoe@correo.com">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-md-12 input-container">
-                        <label for="password" class="form-label" style="font-size: 2.2rem ; padding-right: 2rem;  margin: 1rem;">Contraseña:</label>
-                        <input class="form-control transparent-input" style="font-size: 1.5rem;" type="password" name="password" id="password" placeholder="  &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;  ">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="password" class="labels" >Contraseña:</label>
+                        <input class=" form-control transparent-input" style="font-size: 1.5rem;" type="password" name="password" id="password" placeholder="  &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;  ">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-md-12 input-container">
-                        <label for="repeat-password" class="form-label" style="font-size: 2.2rem ; padding-right: 2rem;  margin: 1rem;">Repita Contraseña:</label>
-                        <input class="form-control transparent-input" style="font-size: 1.5rem;" type="password" name="repeat-password" id="repeat-password" placeholder="  &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="repeat-password" class="labels" >Repita Contraseña:</label>
+                        <input class="form-control transparent-input" style="font-size: 1.5rem;"  type="password" name="repeat-password" id="repeat-password" placeholder="  &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;">
                     </div>
                 </div>
     
-                <div class="form__submit d-flex justify-content-between" style="padding: 0 5rem;">
-                    <div class="form-group form-check align-self-center" style="margin-right: auto;">
+                <div class="form__submit">
+                    <div class="form-check align-self-center">
                         <input type="checkbox" class="form-check-input" id="acceptTerms">
-                        <label class="form-check-label recordarme-text" for="acceptTerms" style="font-size: 1.5rem; padding: 1rem;">Acepto <a href="./condicionesdeuso.html">Términos y Condiciones</a></label>
+                        <label class=" recordarme-text " for="acceptTerms">Acepto <a href="./condicionesdeuso.html">Términos y Condiciones</a></label>
                     </div>
                     <div>
-                        <input type="submit" class="btn btn-danger "  value="Registrar" >
+                        <input type="submit" class="btn__registrar"  value="Registrar" >
                     </div>
                 </div>
                 
             </form>
         </div>
-       
-
-
     </main>
     
 
-    
+
+
+
 
     <footer class="footer">
         <div class="footer__rectangle">
             <!-- Logo a la izquierda -->
-            <picture class="footer__logo"> 
+            <picture class="footer__logo">
                 <a href="./index.html">
                     <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
                 </a>
             </picture>
-    
+
             <div class="footer__button">
                 <a href="./registro.html">Registro</a>
             </div>
-         
-      
-           <div class="footer__button">
+
+
+            <div class="footer__button">
                 <a href="./privacidad.html">Privacidad</a>
             </div>
-    
+
             <div class="footer__button">
                 <a href="./condicionesdeuso.html">Condiciones de uso</a>
             </div>
-          
+
             <!-- Horarios y sucursales a la derecha -->
             <div class="footer__info">
                 <p class="footer__info">HORARIO DE ATENCIÓN:</p>
-                    <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
-                    
+                <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+
             </div>
-    
-    
-        </div> 
+
+
+        </div>
         <!--Línea separadora -->
         <hr class="footer__line">
         <!-- Logos de redes sociales -->
         <div class="footer__social">
             <p>Seguinos en redes sociales:</p>
-            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
-            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon icon="simple-icons:x"></iconify-icon></a>
-            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="simple-icons:x"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ri:instagram-fill"></iconify-icon></a>
         </div>
         <!-- Derechos de autor y créditos -->
         <div class="footer__copy">
@@ -174,18 +167,20 @@
             <cite>Desarrolladores: Cristopher Herrera y Melisa Jiménez</cite>
         </div>
     </footer>
-    
-    
-        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="../javascript/registro.js"></script>
+    <script src="../javascript/script-nav.js"></script>
 
-    
-    </body>
-    </html>
-    
+
+
+</body>
+
+</html>

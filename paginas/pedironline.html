@@ -3,99 +3,82 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title>
-   <link rel="stylesheet" href="../css/index.css"> >
-   <link rel="stylesheet" href="../css/pedironline.css">
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-   
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/pedironline.css">
+    <link rel="stylesheet" href="../css/styles-nav.css">
+    <!-- <link rel="stylesheet" href="../css/footer-query.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-     <!-- INICIO HEADER-->
- 
-    
-     <header>
-        <nav class="navbar container navbar-expand-lg">
-            <picture class="navbar__logo"> 
-                <a href="./index.html">
-                    <img class="img-fluid" src="../img/logopizzaynombre.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-                </a>
-            </picture>
+    <!-- INICIO HEADER-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logopizzaynombre.png"" alt=" Logo"></a>
 
-     
-
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link with-icon" href="./menu.html">MENÚ </a>
-                    
-                </li>
+            </div>
+            <ul class="menu">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li class="dropdown">
+                    <a href="contacto.html">Contacto
+                        <iconify-icon icon="carbon:chevron-down"></iconify-icon>
+                    </a>
 
 
-                <li>
-                    <a class="navbar__link" href="./sucursales.html">SUCURSALES</a>
-                </li>
-
-
-                <li class="navbar__item with-submenu" id="contacto-menu">
-                    <a class="navbar__link with-icon" href="./contacto.html">CONTACTO <iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                    </iconify-icon>
                     <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="../paginas/atalcliente.html" class="submenu__link">Atención al cliente</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="../paginas/rrhh.html" class="submenu__link">Trabajá con nosotros</a>
-                        </li>
+                        <li><a href="atalcliente.html">Atención al cliente</a></li>
+                        <li><a href="rrhh.html">Trabajá con Nosotros</a></li>
                     </ul>
                 </li>
-
-                <li>
-                    <a class="navbar__link" href="./login.html">LOGIN</a>
-                </li>
-
-
-                
-                <li>
-                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon> PEDÍ ONLINE</a>
-                </li>
-
-                      
-                    </ul>
+                <li><a href="login-usuario.html">Login</a></li>
+                <li class="carrito">
+                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon>
+                        PEDÍ ONLINE</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-
     <!-- FIN HEADER -->
-
-
 
 
     <main class="main-container">
 
         <div class="titulosseparadores-container">
-           <h4 class="titulosseparadores">PEDÍ ONLINE</h4>
-           <div class="mensaje titulo">
-            Adelantá tu pedido y retiralo en el local más cercano.
-        
-        </div>
+            <h4 class="titulosseparadores">PEDÍ ONLINE</h4>
+            <div class="mensaje titulo">
+                Adelantá tu pedido y retiralo en el local más cercano.
 
-
-        <div class="custom-container mt-5">
-            <form>
-                <div class="form-group">
-                    <label class="titulos" for="elegirTienda">Selecciona la sucursal:</label>
-                    <select class="form-control custom-select" id="elegirTienda">
-                        <option class="sucursalesform"  value="value1">Pinamar</option>
-                        <option class="sucursalesform"  value="value2">Caseros</option>
-                    </select>
-                </div>
-            </form>
-        </div>
+            </div>
             
 
+            <div class="custom-container mt-5">
+                <form>
+                    <div class="form-group">
+                        <label class="titulos" for="elegirTienda">Selecciona la sucursal:</label>
+                        <select class="form-control custom-select" id="elegirTienda">
+                            <option class="sucursalesform" value="value1">Pinamar</option>
+                            <option class="sucursalesform" value="value2">Caseros</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+
         </div>
 
 
@@ -106,166 +89,604 @@
 
 
 
-<!-- ejemplo 1 -->
+        <!-- ejemplo 1 -->
 
 
-<section class="cart__content">
-    <h2 class="titulos">Elegí tu producto:</h2>
+        <section class="cart__content">
+            <h2 class="titulos">Elegí tu producto:</h2>
 
-    <div class="row">
+            <div class="row">
 
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Mozzarella</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$1999.99</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Mozzarella</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, aceitunas verdes y orégano</p>
+                            <p class="card-text precio">$1999.99</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Fugazzetta</h3>
+                            <p class="card-text">Cebolla juliana, orégano, muzzarella, aceite de oliva, aceitunas verdes
+                            </p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Jamón y morrón</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, jamón cocido, morrones, aceitunas verdes y
+                                orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Napolitana</h3>
+                            <p class="card-text">Salsa de tomate, muz., rodajas de tom., ajo picado, albahaca, queso
+                                provolone, aceitunas verdes y orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Calabresa</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, longaniza calabresa, rodajas de tomate
+                                ,aceitunas verdes y orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Rúcula</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, rúcula, aceitunas verdes y orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Caribe</h3>
+                            <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, ananá en rodajas, azucar
+                                gratinada y cerezas</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Provolone</h3>
+                            <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, queso provolone, aceitunas
+                                verdes y orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza Roquefort</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, queso roquefort, aceitunas verdes y
+                                orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza de Pollo</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, pollo picado, huevo rallado, aceitunas
+                                verdes y orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza de Jamón</h3>
+                            <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, aceitunas verdes y orégano
+                            </p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza 4 quesos</h3>
+                            <p class="card-text">Salsa de tomate, muzzarella, parmesano, roquefort, provolone y orégano
+                            </p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pizza de Palmitos</h3>
+                            <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, palmitos, salsa golf,
+                                aceitunas y orégano</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Empanada de carne</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Empanada de pollo</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Empanada de jamón y queso</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Empanada de humita</h3>
+                            <p class="card-text precio">$500.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Empanada de cebolla y queso</h3>
+                            <p class="card-text precio">$500.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Sandwich de Milanesa Completo</h3>
+                            <p class="card-text precio">$2000.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Sandwich de Milanesa Napolitano</h3>
+                            <p class="card-text precio">$2500.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Sandwich de Milanesa c/Cebolla y Queso</h3>
+                            <p class="card-text precio">$2500.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Sandwich de Milanesa c/Provolone</h3>
+                            <p class="card-text precio">$2500.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Sandwich de Pollo Completo</h3>
+                            <p class="card-text precio">$2500.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Hamburguesa Clásica</h3>
+                            <p class="card-text">Pan, medallón de carne, lechuga, tomate y su guarnición de papas fritas
+                            </p>
+                            <p class="card-text precio">$1800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Hamburguesa Clásica</h3>
+                            <p class="card-text">Pan, medallón de carne, lechuga, tomate y su guarnición de papas fritas
+                            </p>
+                            <p class="card-text precio">$1800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Hamburguesa Clásica</h3>
+                            <p class="card-text">Pan, medallón de carne, lechuga, tomate y su guarnición de papas fritas
+                            </p>
+                            <p class="card-text precio">$1800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Hamburguesa c/Doble Jamón y Queso</h3>
+                            <p class="card-text">Pan, doble medallón de carne, doble jamón, doble queso cheddar y su
+                                guarnición de papas fritas</p>
+                            <p class="card-text precio">$2100.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Hamburguesa Completa</h3>
+                            <p class="card-text">Pan, medallón de carne, lechuga, tomate, huevo a la plancha, jamón,
+                                queso cheddar y su guarnición de papas fritas</p>
+                            <p class="card-text precio">$2300.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Hamburguesa Veggie</h3>
+                            <p class="card-text">Pan, medallón Veggie, lechuga, tomate, mayonesa agría, queso cheddar y
+                                su guarnición de papas fritas</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Cheeseburger</h3>
+                            <p class="card-text">Pan, medallón Veggie, panceta, huevo a la plancha, ketchup, queso
+                                cheddar y
+                                su guarnición de papas fritas</p>
+                            <p class="card-text precio">$2200.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pepsi 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Seven Up 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Paso de los Toros Pomelo 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Coca Cola 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Coca Cola 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Coca Cola Zero 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Fanta 1,5L</h3>
+                            <p class="card-text precio">$800.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Agua Villavicencio 1,5L </h3>
+                            <p class="card-text precio">$650.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Coca Cola 600ml</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Coca Cola Zero 600ml</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Fanta 600ml</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Seven Up 600ml</h3>
+                            <p class="card-text precio">$400.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Agua Eco de los Andes 500ml</h3>
+                            <p class="card-text precio">$350.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Miller lata</h3>
+                            <p class="card-text precio">$600.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Agua Eco de los Andes c/Gas 500ml</h3>
+                            <p class="card-text precio">$350.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Heineken lata</h3>
+                            <p class="card-text precio">$600.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Stella Artois lata</h3>
+                            <p class="card-text precio">$600.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Brahma lata</h3>
+                            <p class="card-text precio">$600.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Imperial lata</h3>
+                            <p class="card-text precio">$600.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Corona 330cc</h3>
+                            <p class="card-text precio">$650.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                    <div class="card flex-fill h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Corona 710cc</h3>
+                            <p class="card-text precio">$1000.00</p>
+                            <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="titulos" >Promociones Especiales:</h2>
+                <div class="promos">
+                    <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                        <div class="card flex-fill h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Docena de Empanadas Surtidas</h3>
+                                <p class="card-text">Carne, pollo, queso y cebolla, jamón y queso, verdura y humita</p>
+                                <p class="card-text precio">$4000.00</p>
+                                <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                        <div class="card flex-fill h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">2 Pizzas de muzzarella + 1 Gaseosa de 1,5L Gratis</h3>
+                                <p class="card-text">Llevesé 2 pizzas de muzzarella y le daremos una gaseosa grande
+                                    completamente gratis</p>
+                                <p class="card-text precio">$4000.00</p>
+                                <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productotarjeta col-md-4 d-flex justify-content-center">
+                        <div class="card flex-fill h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">4 Empanadas de carne + 1 gaseosa de 600ml</h3>
+                                <p class="card-text">Perfecto para una persona</p>
+                                <p class="card-text precio">$1900.00</p>
+                                <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Fugazzetta</h3>
-                    <p class="card-text">Cebolla juliana, orégano, muzzarella, aceite de oliva, aceitunas verdes</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Jamón y morrón</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, jamón cocido, morrones, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Napolitana</h3>
-                    <p class="card-text">Salsa de tomate, muz., rodajas de tom., ajo picado, albahaca, queso provolone, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Calabresa</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, longaniza calabresa, rodajas de tomate ,aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Rúcula</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, rúcula, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Caribe</h3>
-                    <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, ananá en rodajas, azucar gratinada y cerezas</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Provolone</h3>
-                    <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, queso provolone, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza Roquefort</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, queso roquefort, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza de Pollo</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, pollo picado, huevo rallado, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza de Jamón</h3>
-                    <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, aceitunas verdes y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza 4 quesos</h3>
-                    <p class="card-text">Salsa de tomate, muzzarella, parmesano, roquefort, provolone y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="productotarjeta col-md-4 d-flex justify-content-center">
-            <div class="card flex-fill h-100">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Pizza de Palmitos</h3>
-                    <p class="card-text">Salsa de tomate, jamón cocido, muzzarella, palmitos, salsa golf, aceitunas y orégano</p>
-                    <p class="card-text precio">$2200.00</p>
-                    <button class="agregar-al-carrito btn btn-danger">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-
-
-
-     
-    </div>
-</section>
+        </section>
 
 
 
@@ -277,35 +698,35 @@
 
 
 
-<section  id="metodo-pago">
-    <h2 class="titulos">Método de pago</h2>
-    <!-- <label for="efectivo">Pagar en efectivo en el local</label>
+        <section id="metodo-pago">
+            <h2 class="titulos">Método de pago</h2>
+            <!-- <label for="efectivo">Pagar en efectivo en el local</label>
     <input type="radio" id="efectivo" name="pago" value="efectivo">
     <label for="tarjeta">Tarjeta de crédito/débito</label>
     <input type="radio" id="tarjeta" name="pago" value="tarjeta"> -->
 
-    <form id="pagoForm">
-        <label class="tipodepago" for="efectivo">Pagar en efectivo en el local</label>
-        <input type="radio" id="efectivo" name="pago" value="efectivo" onclick="mostrarCamposPago()">
-        <label class="tipodepago" for="tarjeta">Tarjeta de crédito/débito</label>
-        <input type="radio" id="tarjeta" name="pago" value="tarjeta" onclick="mostrarCamposPago()">
-        <div id="camposPago" style="display: none;">
-            <label for="numeroTarjeta">Número de tarjeta</label>
-            <input type="text" id="numeroTarjeta" name="numeroTarjeta">
-            <label for="tipoTarjeta">Tipo de tarjeta</label>
-            <select id="tipoTarjeta" name="tipoTarjeta">
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="maestro">Maestro</option>
-                <option value="ae">American Express</option>
-                
-            </select>
-            <label for="fechaVencimiento">Fecha de vencimiento</label>
-            <input type="text" id="fechaVencimiento" name="fechaVencimiento">
-        </div>
-    </form>
-   
-</section>
+            <form id="pagoForm">
+                <label class="tipodepago" for="efectivo">Pagar en efectivo en el local</label>
+                <input type="radio" id="efectivo" name="pago" value="efectivo" onclick="mostrarCamposPago()">
+                <label class="tipodepago" for="tarjeta">Tarjeta de crédito/débito</label>
+                <input type="radio" id="tarjeta" name="pago" value="tarjeta" onclick="mostrarCamposPago()">
+                <div id="camposPago" style="display: none;">
+                    <label for="numeroTarjeta">Número de tarjeta</label>
+                    <input type="text" id="numeroTarjeta" name="numeroTarjeta">
+                    <label for="tipoTarjeta">Tipo de tarjeta</label>
+                    <select id="tipoTarjeta" name="tipoTarjeta">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="maestro">Maestro</option>
+                        <option value="ae">American Express</option>
+
+                    </select>
+                    <label for="fechaVencimiento">Fecha de vencimiento</label>
+                    <input type="text" id="fechaVencimiento" name="fechaVencimiento">
+                </div>
+            </form>
+
+        </section>
 
 
 
@@ -314,52 +735,55 @@
             <ul id="carrito"></ul>
             <p id="total"></p>
         </section>
-        
+
 
 
         <section id="mensaje">
             <button type="submit">Comprar</button>
         </section>
-        
-      
+
+
     </main>
- 
+
 
     <footer class="footer">
         <div class="footer__rectangle">
             <!-- Logo a la izquierda -->
-            <picture class="footer__logo"> 
-            <a href="./index.html">
-                <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-            </a>
-        </picture>
-            
-           
-           <div class="footer__button">
+            <picture class="footer__logo">
+                <a href="./index.html">
+                    <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
+                </a>
+            </picture>
+
+
+            <div class="footer__button">
                 <a href="./privacidad.html">Privacidad</a>
             </div>
-    
+
             <div class="footer__button">
                 <a href="./condicionesdeuso.html">Condiciones de uso</a>
             </div>
-            
-             
-    
+
+
+
             <!-- Horarios y sucursales a la derecha -->
             <div class="footer__info">
                 <p class="footer__info">HORARIO DE ATENCIÓN:</p>
-                    <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
-                    
+                <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+
             </div>
-        </div> 
+        </div>
         <!--Línea separadora -->
         <hr class="footer__line">
         <!-- Logos de redes sociales -->
         <div class="footer__social">
             <p>Seguinos en redes sociales:</p>
-            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
-            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon icon="simple-icons:x"></iconify-icon></a>
-            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="simple-icons:x"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ri:instagram-fill"></iconify-icon></a>
         </div>
         <!-- Derechos de autor y créditos -->
         <div class="footer__copy">
@@ -368,11 +792,11 @@
         </div>
     </footer>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
     <script src="../javascript/pedironline.js"></script>
+    <script src="../javascript/script-nav.js"></script>
     <script>
         function mostrarCamposPago() {
             const tarjetaChecked = document.getElementById("tarjeta").checked;
@@ -380,9 +804,10 @@
             camposPago.style.display = tarjetaChecked ? "block" : "none";
         }
     </script>
-  
+
 
 </body>
+
 </html>
 
 <!-- ........................Fin de la parte de Melisa Jiménez........................ -->

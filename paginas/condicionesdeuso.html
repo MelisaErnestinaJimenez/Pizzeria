@@ -9,59 +9,45 @@
     <title>Condiciones de uso</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/condicionesdeuso.css">
+    <link rel="stylesheet" href="../css/styles-nav.css">
+    <link rel="stylesheet" href="../css/footer-query.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
      <!-- INICIO HEADER-->
  
      <header>
-        <nav class="navbar container navbar-expand-lg">
-            <picture class="navbar__logo"> 
-                <a href="./index.html">
-                    <img class="img-fluid" src="../img/logopizzaynombre.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-                </a>
-            </picture>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logopizzaynombre.png"" alt=" Logo"></a>
 
-     
-
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link with-icon" href="./menu.html">MENÚ </a>
-                    
-                </li>
+            </div>
+            <ul class="menu">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li class="dropdown">
+                    <a href="contacto.html">Contacto
+                        <iconify-icon icon="carbon:chevron-down"></iconify-icon>
+                    </a>
 
 
-                <li>
-                    <a class="navbar__link" href="./sucursales.html">SUCURSALES</a>
-                </li>
-
-
-                <li class="navbar__item with-submenu" id="contacto-menu">
-                    <a class="navbar__link with-icon" href="./contacto.html">CONTACTO <iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                    </iconify-icon>
                     <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="../paginas/atalcliente.html" class="submenu__link">Atención al cliente</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="../paginas/rrhh.html" class="submenu__link">Trabajá con nosotros</a>
-                        </li>
+                        <li><a href="atalcliente.html">Atención al cliente</a></li>
+                        <li><a href="rrhh.html">Trabajá con Nosotros</a></li>
                     </ul>
                 </li>
-
-                <li>
-                    <a class="navbar__link" href="./login.html">LOGIN</a>
-                </li>
-
-
-                
-                <li>
-                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon> PEDÍ ONLINE</a>
-                </li>
-
-                      
-                    </ul>
+                <li><a href="login-usuario.html">Login</a></li>
+                <li class="carrito">
+                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon>
+                        PEDÍ ONLINE</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -187,6 +173,7 @@
     
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script src="../javascript/script-nav.js"></script>
 </body>
 </html>
 

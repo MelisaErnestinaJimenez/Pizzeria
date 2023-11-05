@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Por favor, complete todos los campos');
         } else {
             alert('¡Ingreso exitoso!');
-           
         }
     });
 });

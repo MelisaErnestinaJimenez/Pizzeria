@@ -3,71 +3,55 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contacto.css"> 
-    <link rel="stylesheet" href="../css/index.css"> 
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/styles-nav.css">
+    <link rel="stylesheet" href="../css/footer-query.css">
+    <link rel="stylesheet" href="../css/index.css">
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Contacto</title>
 </head>
+
 <body>
-     <!-- INICIO HEADER-->
-
- 
-    
-        <header>
-            <nav class="navbar container navbar-expand-lg">
-            <picture class="navbar__logo"> 
-                <a href="./index.html">
-                    <img class="img-fluid" src="../img/logopizzaynombre.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-                </a>
-            </picture>
-
-     
-
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link with-icon" href="./menu.html">MENÚ </a>
-                    
-                </li>
-
-
-                <li>
-                    <a class="navbar__link" href="./sucursales.html">SUCURSALES</a>
-                </li>
-
-
-                <li class="navbar__item with-submenu" id="contacto-menu">
-                    <a class="navbar__link with-icon" href="./contacto.html">CONTACTO <iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="../paginas/atalcliente.html" class="submenu__link">Atención al cliente</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="../paginas/rrhh.html" class="submenu__link">Trabajá con nosotros</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a class="navbar__link" href="./login.html">LOGIN</a>
-                </li>
-
-
+    <!-- INICIO HEADER-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logopizzaynombre.png"" alt=" Logo"></a>
                 
-                <li>
-                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon> PEDÍ ONLINE</a>
-                </li>
+            </div>
+            <ul class="menu">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li class="dropdown">
+                    <a href="contacto.html">Contacto
+                        <iconify-icon icon="carbon:chevron-down"></iconify-icon>
+                    </a>
 
-                      
+
+                    </iconify-icon>
+                    <ul class="submenu">
+                        <li><a href="atalcliente.html">Atención al cliente</a></li>
+                        <li><a href="rrhh.html">Trabajá con Nosotros</a></li>
                     </ul>
+                </li>
+                <li><a href="login-usuario.html">Login</a></li>
+                <li class="carrito">
+                    <a class="navbar__link" href="./pedironline.html"> <iconify-icon icon="mdi:cart"></iconify-icon>
+                        PEDÍ ONLINE</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-
-
     <!-- FIN HEADER -->
 
 
@@ -78,121 +62,136 @@
 
         <div class="contactobackground">
             <section class="contacto-info">
-                <p class="mensaje titulos">Cualquier duda o consulta, contáctate con nosotros. <br><br> Estas son nuestras redes sociales:</p>
-                
+                <p class="mensaje titulos">Cualquier duda o consulta, contáctate con nosotros. <br><br> Estas son
+                    nuestras redes sociales:</p>
+
                 <div class="container">
                     <div class="row mx-auto d-flex justify-content-center">
                         <div class="col-md-5 mb-4 d-flex justify-content-center">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title"><iconify-icon icon="ic:baseline-facebook"></iconify-icon><br> Facebook</h5>
-                                    <a href="https://www.facebook.com/TuPizzeria" target="_blank" class="btn btn-outline-danger">Visitar</a>
+                                    <h5 class="card-title"><iconify-icon icon="ic:baseline-facebook"></iconify-icon><br>
+                                        Facebook</h5>
+                                    <a href="https://www.facebook.com/TuPizzeria" target="_blank"
+                                        class="btn btn-outline-danger">Visitar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-5 mb-4 d-flex justify-content-center">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title"><iconify-icon icon="ri:instagram-fill"></iconify-icon><br> Instagram</h5>
-                                    <a href="https://www.instagram.com/TuPizzeria" target="_blank" class="btn btn-outline-danger">Visitar</a>
+                                    <h5 class="card-title"><iconify-icon icon="ri:instagram-fill"></iconify-icon><br>
+                                        Instagram</h5>
+                                    <a href="https://www.instagram.com/TuPizzeria" target="_blank"
+                                        class="btn btn-outline-danger">Visitar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-5 mb-4 d-flex justify-content-center">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title"><iconify-icon icon="simple-icons:x"></iconify-icon><br> Twitter</h5>
-                                    <a href="https://twitter.com/TuPizzeria" target="_blank" class="btn btn-outline-danger">Visitar</a>
+                                    <h5 class="card-title"><iconify-icon icon="simple-icons:x"></iconify-icon><br>
+                                        Twitter</h5>
+                                    <a href="https://twitter.com/TuPizzeria" target="_blank"
+                                        class="btn btn-outline-danger">Visitar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-5 mb-4 d-flex justify-content-center">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title"><iconify-icon icon="mdi:gmail"></iconify-icon> <br> Gmail</h5>
+                                    <h5 class="card-title"><iconify-icon icon="mdi:gmail"></iconify-icon> <br> Gmail
+                                    </h5>
                                     <a href="mailto:tuemail@gmail.com" class="btn btn-outline-danger">Enviar correo</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
-                
-                
+
+
+
+
                 <div class="container">
                     <p class="sucursales-tel mensaje titulos text-center">Nuestros números de contacto por sucursal:</p>
                     <div class="row justify-content-center">
-                      <div class="col-md-6">
-                        <div class="card text-white bg-dark">
-                          <img src="../img/contacto/celular.webp" class="card-img-top" alt="Imagen de fondo" style="object-fit: cover; height: 15rem; filter: brightness(40%);">
-                          <div class="card-img-overlay d-flex align-items-center">
-                            <ul class="list-unstyled m-4">
-                              <li class="text-center"><span class="iconify" data-icon="ph:phone-bold"></span> Pinamar: 02254511234</li>
-                            </ul>
-                          </div>
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark">
+                                <img src="../img/contacto/celular.webp" class="card-img-top" alt="Imagen de fondo"
+                                    style="object-fit: cover; height: 15rem; filter: brightness(40%);">
+                                <div class="card-img-overlay d-flex align-items-center">
+                                    <ul class="list-unstyled m-4">
+                                        <li class="text-center"><span class="iconify" data-icon="ph:phone-bold"></span>
+                                            Pinamar: 02254511234</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card text-white bg-dark">
-                          <img src="../img/contacto/celular.webp" class="card-img-top" alt="Imagen de fondo" style="object-fit: cover; height: 15rem; filter: brightness(40%);">
-                          <div class="card-img-overlay d-flex align-items-center">
-                            <ul class="list-unstyled m-4">
-                              <li class="text-center"><span class="iconify" data-icon="ph:phone-bold"></span> Caseros: 1164891111</li>
-                            </ul>
-                          </div>
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark">
+                                <img src="../img/contacto/celular.webp" class="card-img-top" alt="Imagen de fondo"
+                                    style="object-fit: cover; height: 15rem; filter: brightness(40%);">
+                                <div class="card-img-overlay d-flex align-items-center">
+                                    <ul class="list-unstyled m-4">
+                                        <li class="text-center"><span class="iconify" data-icon="ph:phone-bold"></span>
+                                            Caseros: 1164891111</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  
-                  
-              
+                </div>
+
+
+
                 <br><br>
-                
+
                 <p class="cartel"><a href="./atalcliente.html">Si deseas enviarnos comentarios, haz clic aquí.</a></p>
                 <br><br>
                 <p class="cartel"><a href="./rrhh.html">Si deseas trabajar con nosotros, haz clic aquí.</a></p>
             </section>
         </div>
-        
+
     </main>
 
     <footer class="footer">
         <div class="footer__rectangle">
             <!-- Logo a la izquierda -->
-            <picture class="footer__logo"> 
-            <a href="./index.html">
-                <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
-            </a>
-        </picture>
-            
-           
-           <div class="footer__button">
+            <picture class="footer__logo">
+                <a href="./index.html">
+                    <img src="../img/logo-pizzarribatextoblanco.png" alt="Logo de La Masa de Don Calvo - Pizzería">
+                </a>
+            </picture>
+
+
+            <div class="footer__button">
                 <a href="./privacidad.html">Privacidad</a>
             </div>
-    
+
             <div class="footer__button">
                 <a href="./condicionesdeuso.html">Condiciones de uso</a>
             </div>
-          
-             
-    
+
+
+
             <!-- Horarios y sucursales a la derecha -->
             <div class="footer__info">
                 <p class="footer__info">HORARIO DE ATENCIÓN:</p>
-                    <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
-                    
+                <p class="footer__info">Todos los días desde las 11:00 a.m. hasta las 12:30 a.m.</p>
+
             </div>
-        </div> 
+        </div>
         <!--Línea separadora -->
         <hr class="footer__line">
         <!-- Logos de redes sociales -->
         <div class="footer__social">
             <p>Seguinos en redes sociales:</p>
-            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
-            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon icon="simple-icons:x"></iconify-icon></a>
-            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon icon="ri:instagram-fill"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.facebook.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="navbar__social" href="https://twitter.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="simple-icons:x"></iconify-icon></a>
+            <a class="navbar__social" href="https://www.instagram.com/TuPizzeria" target="_blank"> <iconify-icon
+                    icon="ri:instagram-fill"></iconify-icon></a>
         </div>
         <!-- Derechos de autor y créditos -->
         <div class="footer__copy">
@@ -203,7 +202,9 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="../javascript/script-nav.js"></script>
 </body>
+
 </html>
 
 <!-- ........................Fin de la parte de Melisa Jiménez........................ -->

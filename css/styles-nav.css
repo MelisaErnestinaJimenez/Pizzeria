@@ -9,11 +9,15 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #30343f;
-    padding-left: 2em;
+    padding-left: 1em;
     width: 100%;
     position: relative;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.txtbox{
+    font-size: 1.5rem;
 }
 
 .logo{
@@ -22,7 +26,7 @@ body {
 }
 
 .logo img {
-    width: 70%; /* Tamaño más grande del logo */
+    width: 60%; /* Tamaño más grande del logo */
     height: auto;
 }
 
@@ -30,7 +34,6 @@ body {
     list-style: none;
     display: flex;
     gap: 1em;
-    padding-right: 10em;
     align-items: center;
     font-size: 2em;
 }
@@ -64,7 +67,6 @@ body {
     border: 1px solid #555;
     z-index: 10;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    margin-left: -1em; 
     padding: 0; /* Reducir espacio entre submenu y su margen izquierdo */
 
 }
@@ -90,17 +92,23 @@ body {
 .hamburger {
     display: none;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
     cursor: pointer;
 }
 
 .hamburger span {
     width: 4em;
-    height: 0.3em;
+    height: 0.2em;
     background-color: white;
+
 }
 
-@media screen and (max-width: 768px) {
+.carrito {
+    margin-right: 2em;
+}
+
+
+@media screen and (max-width: 769px) {
     .menu {
         display: none;
         flex-direction: column;
@@ -137,7 +145,7 @@ body {
         display: flex;
         padding-right: 4em;
 
-        gap: 2em;
+        /* gap: 2em; */
     }
 
     .menu.active {
@@ -148,14 +156,15 @@ body {
     .submenu {
         position: relative;
         border: none;
-        width: 90%;
+        width: 80%;
         border-radius: 0.4em;
         margin-left: 0.5em;
         margin-top: 0.3em;
+
         
     }
     .submenu li{
-        width: 89%;
+        width: 100%;
         
 
     }
@@ -167,7 +176,34 @@ body {
         padding-bottom: 1em;
     }
     .logo{
-        width: 75%;
-        margin-left: 2.5em;
+        width: 65%;
+        margin-left: 1em;
     }
+    .carrito{
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1280px){
+    .logo{
+        width: 30%;
+        margin-left: 1em;
+    }
+    .logo img{
+        width: 100%
+    }
+
+    .menu li a {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+.logo img {
+    width: 80%;
+    height: auto;
+}
 }
